@@ -1,0 +1,23 @@
+<body>
+
+	<% if current_user %>
+		<div id="new-peep">
+			<form action="/peeps" method="post">
+			Post a new peep!<br /><br /><input type="text" name="message"><p style="font-size:0.5em">Max 150 characters</p>
+			<input type="submit" value="Post">
+			</form>
+		</div>
+	<% end %>
+
+	<div id="peeps-container">
+		<ul id="peeps">
+			<% @peeps.each do |peep| %>
+			<li class="peep">
+			<p class="peep-username">@<%= peep.user.username %>(<%= peep.user.name %>) says:</p><br />
+			<p class="peep-msg"><%= peep.message %><br />
+			<p class="peep-date"><%= peep.date %></p></p></li><br /><% end %>
+		</ul>
+
+
+
+</body>

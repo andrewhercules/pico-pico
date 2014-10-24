@@ -1,0 +1,20 @@
+<html>
+
+	<body>
+
+	<div id="sign-in-form">
+
+		<form action="/users" method="post"><p style="font-size:1.5em;">Please sign up here ...</p><br />
+		<p>Full Name</p> <input name="name" type="text" value="<%= @user.name %>">
+		<p>Username (5 and 20 characters)</p> <input name="username" type="text" value="<%= @user.username %>">
+		<p>Email</p> <input name="email" type="text" value="<%= @user.email %>">
+		<p>Password</p> <input name="password" type="password">
+		<p>Password Confirmation</p> <input name="password_confirmation" type="password"> <input type="submit" value="Sign up">
+		</form>
+		<br />
+
+	</div>
+
+	</body>
+
+</html>

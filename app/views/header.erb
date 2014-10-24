@@ -1,0 +1,16 @@
+<header>
+
+	<h1><a href='/'>Chitter</a></h1>
+
+	<% if current_user %>
+		<p id="welcome-msg">Welcome, <%= current_user.username %>!</p>
+		<form id="log-out" method="post" action="/sessions">
+		<input type="hidden" name="_method" value="delete">
+		<input type="submit" value="Sign out">
+		</form>
+	<% else %>
+		<a href="/sessions/new" class="sign-in-button">Sign in</a>
+		<a href="/users/new" class="sign-up-button">Sign up</a>
+	<% end %>
+
+</header>

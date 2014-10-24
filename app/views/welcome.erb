@@ -1,0 +1,19 @@
+<html>
+
+	<% if current_user %>
+
+		<ul>
+			<% @peeps.reverse.each do |peep| %>
+			<li><%= peep.message %> *** <%= peep.date %></li><% end %> by <%= @user.username %> aka <%= @user.name %>
+		</ul>
+
+		<div id="new-peep">
+			<form action="/peeps" method="post">
+			Peep: <input type="text" name="message">
+			<input type="submit" value="Send peep">
+			</form>
+		</div>
+
+		<% end %>
+
+</html>

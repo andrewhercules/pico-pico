@@ -1,0 +1,74 @@
+* {
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 20px;
+}
+
+section#header {
+	height: 75px;
+	background-color: navy;
+
+}
+
+section#landscape-profile-image {
+	height: 320px;
+	background-color: green;
+}
+
+section#profile-avatar {
+	position: absolute;
+	margin-left: 30px;
+	top: 325px;
+	height: 200px;
+	width: 200px;
+	background-color: red;
+}
+
+section#profile-info {
+	position: absolute;
+	margin-left: 30px;
+	top: 550px;
+	height: 300px;
+	width: 350px;
+	background-color: black;
+}
+
+section#main-body {
+	height: 2000px;
+	background-color: #868686;
+}
+
+section#list-of-peeps {
+	position: absolute;
+	margin-left: 200px;
+	top: 395px;
+	left: 225px;
+	height: 2000px;
+	width: 550px;
+	background-color: yellow;
+}
+
+section#sign-up {
+	position: absolute;
+	top: 450px;
+	left: 1025px;
+	height: 300px;
+	width: 350px;
+	background-color: purple;
+}
+
+section#sign-in {
+	position: absolute;
+	top: 100px;
+	left: 1000px;
+	height: 200px;
+	width: 400px;
+	background-color: orange;
+}
+
+}
