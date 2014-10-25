@@ -34,6 +34,12 @@ FONTS & HEADERS
 		color: #4f4748;
 	}
 
+	aside#profile-info-box p {
+		padding-top: 17px;
+		font-weight: 600;
+		font-size: 1.5em;
+	}
+
 /*==========
 HEADER
 ==========*/
@@ -87,7 +93,7 @@ aside#profile-info-box {
 	position: absolute;
 	left: 175px;
 	top: 375px;
-	height: 300px;
+	height: 100px;
 	width: 200px;
 	background-color: #4f4749;
 }
@@ -130,7 +136,22 @@ FORMS
     width: 250px;
     height: 30px;
     margin-left: 20px; 
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
   }
 
+#sign-in-form p {
+		color: #4f4749;
+    font-size: 1em;
+    font-weight: 400;
+
+  }
+
+#sign-in-form h2 {
+		font-weight: 700;
+		margin-left: 10px;
+		padding-top: 4%;
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		color: #4f4749;
+		font-size: 1.25em;
+	}

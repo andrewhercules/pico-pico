@@ -4,8 +4,14 @@ $(document).ready(function() {
 	// $('#sign-in-box').hide();
 
 	$.getJSON('/api', function(peepData){
+
 		$('#app=a').text(peepData[1]["name"])
+	
+		$('#username').text(peepData[0]["username"])
+	
 	});
+
+	
 
 
 

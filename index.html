@@ -19,7 +19,8 @@
 		<section id='sign-in-box'>
 			<form method='post' action='/' id='sign-in-form'><h2>Please sign here</h2><br />
 			<p>Username</p> <input type='text' name='username' placeholder='Username'>
-			<p>Password &nbsp;&nbsp;(<a href="/forgotpassword">Forgot your password?</a>)</p> <input type="password" name="password"> <input type="submit" value="Sign in"> 
+			<p>Password &nbsp;&nbsp;(<a href="/forgotpassword">Forgot your password?</a>)</p> <input type="password" name="password" placeholder='Password'>
+			<input type="submit" value="Sign in"> 
 			</form>
 
 		</section>
@@ -35,7 +36,8 @@
 			</aside>
 
 			<aside id='profile-info-box'>
-				<h2>profile text</h2>
+				<p id='name'>Name</p>
+				<p id='username'>Username</p>
 			</aside>
 
 			<section id='list-of-peeps'></section>	
