@@ -69,7 +69,7 @@ section#sign-in-box {
 	z-index: 2;
 }
 
-a.sign-in-button {
+a#sign-in-button {
   display: inline-block;
   width: 80px;
   color: #4f4749;
@@ -155,16 +155,25 @@ FORMS
     font-size: 1em;
     width: 250px;
     height: 30px;
-    margin-left: 20px; 
+    margin-left: 35px; 
     margin-top: 5px;
     margin-bottom: 15px;
   }
+
+#sign-in-form input[type=submit] {
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: white;
+	background-color: #4f4749;
+	padding: 5px;
+	margin-left: 10px;
+
+}
 
 #sign-in-form p {
 		color: #4f4749;
     font-size: 1em;
     font-weight: 400;
-
   }
 
 #sign-in-form h2 {
