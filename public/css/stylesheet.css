@@ -30,6 +30,7 @@ FONTS & HEADERS
 	}
 
 	a {
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 		text-decoration: none;
 		color: #4f4748;
 	}
@@ -67,6 +68,25 @@ section#sign-in-box {
 	background-color: #fbc616;
 	z-index: 2;
 }
+
+a.sign-in-button {
+  display: inline-block;
+  width: 80px;
+  color: #4f4749;
+  font-size: 1.5em;
+  font-weight: 600;
+  background: #fbc616;
+  text-align: center;
+  vertical-align: center;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  left: 900px;
+  top: -45px;
+}
+
 
 /*==========
 MAIN AREA
