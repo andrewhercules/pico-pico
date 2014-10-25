@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>App Title Goes Here</title>
+		<title>Chitter</title>
 		<link rel='stylesheet' type='text/css' href='public/css/reset.css'>
 		<link rel='stylesheet' type='text/css' href='public/css/stylesheet.css'>
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css'>
@@ -11,19 +11,45 @@
 
 	<body>
 
-		<section id='header'><h1>header for icon, search box, and sign-in link</h1></section>
-		<section id='sign-in'></section>
+		<section id='header'>
+			<h1>Chitter</h1>
+			<img src='public/images/small-icon.png' id='header-icon' alt='Small icon of bird'>
+		</section>
+		
+		<section id='sign-in-box'>
+			<form method='post' action='/' id='sign-in-form'><h2>Please sign here</h2><br />
+			<p>Username</p> <input type='text' name='username' placeholder='Username'>
+			<p>Password &nbsp;&nbsp;(<a href="/forgotpassword">Forgot your password?</a>)</p> <input type="password" name="password"> <input type="submit" value="Sign in"> 
+			</form>
 
-		<section id='landscape-profile-image'><h1>section for profile image (stock for all users)</h1></section>
+		</section>
 
-		<section id='profile-avatar'><h1>profile avatar (stock for all users)</h1></section>
-		<section id='profile-info'></section>	
+		
+		
 
-		<section id='main-body'></section>
 
-		<section id='list-of-peeps'></section>
+		<section id='main-body'>
 
-		<section id='sign-up'></section>
+			<aside id='profile-avatar-box'>
+				<img src='public/images/profile-avatar.png' id='profile-avatar' alt='Profile avatar'>	
+			</aside>
+
+			<aside id='profile-info-box'>
+				<h2>profile text</h2>
+			</aside>
+
+			<section id='list-of-peeps'></section>	
+
+			<aside id='sign-up-box'>
+				<h2>sign-up form</h2>
+			</aside>
+
+
+		</section>
+
+		
+
+		
 	
 		<script src='public/scripts/jquery-min.js' type='text/javascript'></script>
 		<script src='public/scripts/interface.js' type='text/javascript'></script>

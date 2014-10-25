@@ -1,20 +1,12 @@
 $(document).ready(function() {
 
+	// // Use the code below to hide the sign-in-box after page loads
+	// $('#sign-in-box').hide();
+
 	$.getJSON('/api', function(peepData){
-		console.log(peepData[2])
+		$('#app=a').text(peepData[1]["name"])
 	});
 
-// 	$.get('/api', function(data) {
-// 		console.log(data[1])
-// 	})
-// 	$.each($.parseJSON(home), function() {
-//     console.log(this);
-// });
 
-
-	// $.get('/api', function(data) {
-	// 	$('#header h1').text(data[1]["message"])
-	// 	$('#list-of-peeps').text(data['main'].temp)
-	// });
 
 });
