@@ -4,8 +4,18 @@
 
 		<section id='list-of-peeps'>
 			
+			<template id='peep-template'></section>
+				<article>
+					<h5>Username {{username}}</h5>
+					<h5>Name {{name}}</h5>
+					<h5>Message {{message}}</h5>
+					<h5>Date {{date}}</h5>
 
-			
+			</template>
+
+
+
+
 <!-- 				<div id="peeps-container">
 		<ul id="peeps">
 			<% @peeps.each do |peep| %>
@@ -15,12 +25,13 @@
 			<p class="peep-date"><%= peep.date %></p></p></li><br /><% end %>
 		</ul> -->
 
-		</section>	
+			
 
 	</section>
 
-	
+
 	<script src='/scripts/jquery-min.js' type='text/javascript'></script>
+	<script src='/scripts/handlebars.js' type='text/javascript'></script>	
 	<script src='/scripts/interface.js' type='text/javascript'></script>
 
 </body>

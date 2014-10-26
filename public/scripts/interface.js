@@ -11,13 +11,16 @@ $(document).ready(function() {
 	});
 
 
-	// $.getJSON('/api', function(peepData){
+	$.getJSON('/api', function(peepData){
+		var source   = $("#peep-template").html();
+		var template = Handlebars.compile(source);
+		$('#list-of-peeps').append(template(peepData));
 
-	// 	$('#app=a').text(peepData[1]["name"])
+		// $('#app=a').text(peepData[1]["name"])
 	
-	// 	$('#username').text(peepData[0]["username"])
+		// $('#username').text(peepData[0]["username"])
 	
-	// });
+	});
 
 
 });
