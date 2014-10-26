@@ -1,23 +1,45 @@
 <body>
+	
+	<section id='main-body'>
 
-	<% if current_user %>
-		<div id="new-peep">
-			<form action="/peeps" method="post">
-			Post a new peep!<br /><br /><input type="text" name="message"><p style="font-size:0.5em">Max 150 characters</p>
-			<input type="submit" value="Post">
+
+		<aside id='profile-avatar-box'>
+			<img src='/images/profile-avatar.png' id='profile-avatar' alt='Profile avatar'>	
+		</aside>
+
+
+		<% if current_user %>
+			<aside id='profile-info-box'>
+				<h4>Name:</h4>
+				<p id='name'><%= current_user.name %></p>
+				<h4>Username:</h4>
+				<p id='username'><%= current_user.username %></p>
+			</aside>
+
+		<% else %>
+
+			<aside id='profile-info-box'></aside>
+
+		<% end %>
+		
+		
+		<section id='list-of-peeps'></section>	
+
+		<aside id='sign-up-box'>
+			<form method='post' action='/' id='sign-up-form'><h2>Sign up here</h2><br />
+				<p>Full Name</p> <input name='name' type='text' placeholder='Full Name'>
+				<p>Username</p> <input name='username' type='text' placeholder='Username'>
+				<p>Email</p> <input name='email' type='text' placeholder='Email address'>
+				<p>Password</p> <input name='password' type='password'>
+				<p>Password Confirmation</p> <input name='password_confirmation' type='password'>
+				<input type="submit" value="Sign up">
 			</form>
-		</div>
-	<% end %>
-
-	<div id="peeps-container">
-		<ul id="peeps">
-			<% @peeps.each do |peep| %>
-			<li class="peep">
-			<p class="peep-username">@<%= peep.user.username %>(<%= peep.user.name %>) says:</p><br />
-			<p class="peep-msg"><%= peep.message %><br />
-			<p class="peep-date"><%= peep.date %></p></p></li><br /><% end %>
-		</ul>
+		</aside>
 
 
+	</section>
+
+	<script src='/scripts/jquery-min.js' type='text/javascript'></script>
+	<script src='/scripts/interface.js' type='text/javascript'></script>
 
 </body>

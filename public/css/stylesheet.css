@@ -36,9 +36,20 @@ FONTS & HEADERS
 	}
 
 	aside#profile-info-box p {
-		padding-top: 17px;
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		padding-top: 5px;
+		padding-bottom: 5px;
 		font-weight: 600;
-		font-size: 1.5em;
+		font-size: 1.2em;
+	}
+
+	aside#profile-info-box h4 {
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		color: white;
+		padding-top: 10px;
+		margin-left: 10px;
+		font-weight: 400;
+		font-size: 0.7em;
 	}
 
 /*==========
@@ -224,3 +235,32 @@ SIGN UP FORM
 		color: white;
 		font-size: 1.25em;
 	}
+
+
+/*==========
+NEW PEEP
+==========*/
+
+section#new-peep {
+	position: absolute;
+	top: -5px;
+	left: 800px;
+}
+
+  #new-peep form input[type=text] {
+    border: 1px;
+    font-size: 1em;
+    width: 400px;
+    height: 35px;
+    margin-left: 20px; 
+  }
+
+  #new-peep form p {
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    font-size: 0.8em;
+    width: 400px;
+    height: 35px;
+
+  }

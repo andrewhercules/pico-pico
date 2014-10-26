@@ -1,16 +1,43 @@
 <header>
 
-	<h1 id="app-name"><a href='/'>Chitter</a></h1>
-
 	<% if current_user %>
-		<p id="welcome-msg">Welcome, <%= current_user.username %>!</p>
-		<form id="log-out" method="post" action="/sessions">
-		<input type="hidden" name="_method" value="delete">
-		<input type="submit" value="Sign out">
-		</form>
+
+		<section id='header'>
+			<h1>Chitter</h1>
+			<a href='/'><img src='/images/small-icon.png' id='header-icon' alt='Small icon of bird'></a>
+			<p id="welcome-msg">Welcome, <%= current_user.username %>!</p>
+			<form id="log-out" method="post" action="/sessions">
+				<input type="hidden" name="_method" value="delete">
+				<input type="submit" value="Sign out">
+			</form>
+		</section>
+
+
+		<section id="new-peep">
+				<form action="/peeps" method="post">
+				<p>Post a new peep! (Max 150 characters)</p><br /><br /><input type="text" name="message" placeholder='Your message goes here'>
+				<input type="submit" value="Post">
+				</form>
+		</section>
+
+
 	<% else %>
-		<a href="/sessions/new" class="sign-in-button">Sign in</a>
-		<a href="/users/new" class="sign-up-button">Sign up</a>
+
+		<section id='header'>
+			<h1>Chitter</h1>
+			<img src='/images/small-icon.png' id='header-icon' alt='Small icon of bird'>
+			<a href="#" id="sign-in-button">Sign in</a>
+		</section>
+
+		<section id='sign-in-box'>
+			<form method='post' action='/sessions' id='sign-in-form'><h2>Sign in here</h2><br />
+				<p>Username</p> <input type='text' name='username' placeholder='Username'>
+				<p>Password &nbsp;&nbsp;(<a href="/forgotpassword">Forgot your password?</a>)</p> 
+				<input type="password" name="password" placeholder='Password'>
+				<input type="submit" value="Sign in"> 
+			</form>
+		</section>
+
 	<% end %>
 
 </header>

@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	// // Use the code below to hide the sign-in-box after page loads
 	
-	// $('#sign-in-box').hide();
+	$('#sign-in-box').hide();
 
 
 	// $.getJSON('/api', function(peepData){
@@ -16,6 +16,7 @@ $(document).ready(function() {
 $('#sign-in-button').on('click', function() {
   $('#sign-in-box').toggle();
 });
+
 
 
 
