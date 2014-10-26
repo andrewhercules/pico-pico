@@ -27,6 +27,9 @@ $(document).ready(function() {
 
 		})
 
+	$(document).on("click", "#remove", function(){
+   $(this).parent('li').remove();
+	});
 
 // ('#list-of-peeps').append(template(individualPeep));
 

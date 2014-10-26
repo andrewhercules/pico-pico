@@ -180,7 +180,7 @@ section#main-body {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
-		height: 100%;
+		height: 1400px;
 		background-color: #cccccc;
 	}
 
@@ -190,7 +190,7 @@ section#main-body {
 			margin-right: auto;
 			width: 50%;
 			top: 25px;
-			height: 100%;
+			height: 95%;
 			
 			background-color: #4f4749;
 		}
@@ -324,6 +324,7 @@ LIST OF PEEPS AREA
 .peep {
   background-color: white;
   margin: 10px;
+  margin-top: 20px;
   padding: 15px, 15px;
   border: 6px solid #fbc616;
 }
