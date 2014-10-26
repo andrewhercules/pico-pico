@@ -14,7 +14,20 @@ $(document).ready(function() {
 	$.getJSON('/api', function(peepData){
 		var source   = $("#peep-template").html();
 		var template = Handlebars.compile(source);
-		$('#list-of-peeps').append(template(peepData));
+		var peepList = $.each(peepData, function(count, listOfAllPeeps) {})
+
+		$.each(peepList, function(count, individualPeep) {
+			$('#list-of-peeps').append(template(individualPeep))
+		})
+
+
+
+// ('#list-of-peeps').append(template(individualPeep));
+
+
+		// $.each(peepData, function(count, individualPeep) {
+		// 	console.log(individualPeep);
+		// })
 
 		// $('#app=a').text(peepData[1]["name"])
 	
