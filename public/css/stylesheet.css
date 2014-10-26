@@ -199,7 +199,7 @@ aside#sign-up-box {
 SIGN IN FORM
 ==========*/
 
-#sign-in-form input[type=text], form input[type="password"] {
+#sign-in-form input[type=text], form input[type="password"], #forgot-password-form input[type=text], form input[type="password"] {
     border: 1px;
     font-size: 1em;
     width: 250px;
@@ -209,7 +209,7 @@ SIGN IN FORM
     margin-bottom: 15px;
   }
 
-#sign-in-form input[type=submit] {
+#sign-in-form input[type=submit], #forgot-password-form input[type=submit]{
 	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 	font-size: 1em;
 	color: white;
@@ -219,13 +219,13 @@ SIGN IN FORM
 
 }
 
-#sign-in-form p {
+#sign-in-form p, #forgot-password p {
 		color: #4f4749;
     font-size: 1em;
     font-weight: 400;
   }
 
-#sign-in-form h2 {
+#sign-in-form h2, #forgot-password-form h2 {
 		font-weight: 700;
 		margin-left: 10px;
 		padding-top: 4%;
@@ -369,18 +369,16 @@ ERRORS
   	font-size: 1.5em;
   }
 
-/* ==========
- FORGOT PASSWORD FORM
- ==========*/
+/*==========
+FORGOT PASSWORD BOX
+==========*/
 
-#forgot-password-box {
+section#forgot-password-box {
 	position: absolute;
-	top: 275px;
+	top: 75px;
 	left: 800px;
-	height: 200px;
+	height: 235px;
 	width: 400px;
-	background-color: navy;
-	z-index: 4;
+	background-color: #fbc616;
+	z-index: 2;
 }
-
-
