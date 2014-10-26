@@ -11,7 +11,7 @@ post '/sessions' do
 		redirect to('/')
 	else
 		flash[:errors] = ["The email or password is incorrect - try again!"]
-		erb :"sessions/new"
+		redirect to('/')
 	end
 end
 

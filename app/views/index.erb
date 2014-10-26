@@ -1,32 +1,16 @@
 <body>
 	
 	<section id='main-body'>
-
-		<section id='list-of-peeps'>
-			
-			<template id='peep-template'></section>
-				<article>
-					<h5>Username {{username}}</h5>
-					<h5>Name {{name}}</h5>
-					<h5>Message {{message}}</h5>
-					<h5>Date {{date}}</h5>
-
-			</template>
-
-
-
-
-<!-- 				<div id="peeps-container">
-		<ul id="peeps">
-			<% @peeps.each do |peep| %>
-			<li class="peep">
-			<p class="peep-username">@<%= peep.user.username %>(<%= peep.user.name %>) says:</p><br />
-			<p class="peep-msg"><%= peep.message %><br />
-			<p class="peep-date"><%= peep.date %></p></p></li><br /><% end %>
-		</ul> -->
-
-			
-
+		<ul id='list-of-peeps'>
+			<template id='peep-template'>
+				<li class='peep'>
+					<p class='peep-username'>{{name}} (@{{username}}) says:</p>
+					<p class='peep-message'>{{message}}<p>
+					<p class='peep-date'>{{date}}</p>
+				</li>
+				<br />			
+			</template>		
+		</ul>
 	</section>
 
 

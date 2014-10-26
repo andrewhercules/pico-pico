@@ -21,12 +21,49 @@ FONTS & HEADERS
 		font-size: 2em;
 	}
 
-	p {
+	p.form {
 		font-weight: 400;
 		padding-left: 8%;
 		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 		color: white;
 		font-size: 1em;
+	}
+
+	p.welcome-message {
+		font-weight: 400;
+		padding-left: 8%;
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		color: white;
+		font-size: 1.2em;
+		padding-top: 20px;
+	}
+
+	p.daily-thought{
+		font-weight: 400;
+		padding-left: 8%;
+		padding-right: 8%;
+		text-align: justify;
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		color: white;
+		font-size: 1em;
+		padding-top: 20px;
+	}
+
+	p.daily-thought-small{
+		font-weight: 400;
+		padding-left: 8%;
+		padding-right: 8%;
+		text-align: justify;
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		color: white;
+		font-size: 1em;
+		padding-top: 20px;
+	}
+
+	#log-out-form {
+		position: relative;
+		top: 10px;
+		left: 20px;
 	}
 
 	a {
@@ -43,7 +80,7 @@ FONTS & HEADERS
 		font-size: 1.2em;
 	}
 
-	aside#profile-info-box h4 {
+	aside#profile-info-box h4, p#name, p#username {
 		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 		color: white;
 		padding-top: 10px;
@@ -129,12 +166,13 @@ aside#profile-info-box {
 	background-color: #4f4749;
 }
 
-	#main-body {
+section#main-body {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
-		height: 800px;
+		height: 100%;
 		background-color: #cccccc;
+		margin-top: -10px;
 	}
 
 		#list-of-peeps {
@@ -143,7 +181,7 @@ aside#profile-info-box {
 			margin-right: auto;
 			width: 50%;
 			top: 25px;
-			height: 90%;
+			height: 100%;
 			
 			background-color: #4f4749;
 		}
@@ -264,3 +302,85 @@ section#new-peep {
     height: 35px;
 
   }
+
+/*==========
+LIST OF PEEPS AREA
+==========*/
+
+
+#peeps-container {
+  background-color: #8dc63f;
+}
+
+.peep {
+  background-color: white;
+  margin: 10px;
+  padding: 15px, 15px;
+  border: 6px solid #fbc616;
+}
+p.peep-message {
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  margin-left: 25px;
+  font-size: 1.25em;
+  font-color: yellow;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p.peep-date {
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-size: 0.6em;
+  text-align: right;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+
+p.peep-username {
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  padding-top: 10px;
+  padding-left: 10px;
+
+}
+/*
+==========
+ERRORS
+==========*/
+
+.flash {
+	width: 500px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;  
+}
+
+  .flash.notice {
+    background-color: #4f4748;
+    color: white;
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  	font-size: 1.5em;
+  }
+
+  .flash.error {
+   background-color: #4f4748;
+   color: white;
+   font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  	font-size: 1.5em;
+  }
+
+/* ==========
+ FORGOT PASSWORD FORM
+ ==========*/
+
+#forgot-password-box {
+	position: absolute;
+	top: 275px;
+	left: 800px;
+	height: 200px;
+	width: 400px;
+	background-color: navy;
+	z-index: 4;
+}
+
+

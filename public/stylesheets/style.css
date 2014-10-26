@@ -139,11 +139,13 @@ form {
 }
 
   .flash.notice {
-    background-color: navy;
+    background-color: black;
+    color: white;
   }
 
   .flash.error {
-   background-color: navy; 
+   background-color: black;
+   color: white;
   }
 
 form#log-out {
