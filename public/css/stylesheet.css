@@ -208,7 +208,7 @@ aside#sign-up-box {
 SIGN IN FORM
 ==========*/
 
-#sign-in-form input[type=text], form input[type="password"], #forgot-password-form input[type=text], form input[type="password"] {
+#sign-in-form input[type=text], input[type="password"], #forgot-password-form input[type=text], input[type="password"] {
     border: 1px;
     font-size: 1em;
     width: 250px;
@@ -247,7 +247,7 @@ SIGN IN FORM
 SIGN UP FORM
 ==========*/
 
-#sign-up-form input[type=text], form input[type="password"] {
+#sign-up-form input[type=text], #sign-up-form input[type="password"] {
     border: 1px;
     font-size: 1em;
     width: 125px;
