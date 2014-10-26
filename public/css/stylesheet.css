@@ -38,7 +38,7 @@ FONTS & HEADERS
 		padding-top: 20px;
 	}
 
-	p.daily-thought{
+	p.daily-thought {
 		font-weight: 400;
 		padding-left: 8%;
 		padding-right: 8%;
@@ -49,14 +49,13 @@ FONTS & HEADERS
 		padding-top: 20px;
 	}
 
-	p.daily-thought-small{
-		font-weight: 400;
+	p#daily-thought-small {
 		padding-left: 8%;
 		padding-right: 8%;
 		text-align: justify;
 		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 		color: white;
-		font-size: 1em;
+		font-size: 0.8em;
 		padding-top: 20px;
 	}
 
@@ -88,6 +87,17 @@ FONTS & HEADERS
 		font-weight: 400;
 		font-size: 0.7em;
 	}
+
+
+	p# {
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		color: white;
+		padding-top: 10px;
+		margin-left: 10px;
+		font-weight: 400;
+		font-size: 0.7em;
+	}
+
 
 /*==========
 HEADER
@@ -172,7 +182,6 @@ section#main-body {
 		margin-right: auto;
 		height: 100%;
 		background-color: #cccccc;
-		margin-top: -10px;
 	}
 
 		#list-of-peeps {
