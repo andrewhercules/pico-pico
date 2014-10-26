@@ -4,6 +4,12 @@ $(document).ready(function() {
 	
 	$('#sign-in-box').hide();
 
+	$('#forgot-password').hide();
+
+	$('#sign-in-button').on('click', function() {
+	  $('#sign-in-box').toggle();
+	});
+
 
 	// $.getJSON('/api', function(peepData){
 
@@ -12,12 +18,6 @@ $(document).ready(function() {
 	// 	$('#username').text(peepData[0]["username"])
 	
 	// });
-
-$('#sign-in-button').on('click', function() {
-  $('#sign-in-box').toggle();
-});
-
-
 
 
 });

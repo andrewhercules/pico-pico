@@ -1,0 +1,20 @@
+<% if current_user %>
+
+	<aside id='sign-up-box'>
+		<p>Advert here</p>
+	</aside>
+
+<% else %>
+
+	<aside id='sign-up-box'>
+		<form method='post' action='/users' id='sign-up-form'><h2>Sign up here</h2><br />
+			<p>Full Name</p> <input name='name' type='text' placeholder='Full Name'>
+			<p>Username</p> <input name='username' type='text' placeholder='Username'>
+			<p>Email</p> <input name='email' type='text' placeholder='Email address'>
+			<p>Password</p> <input name='password' type='password'>
+			<p>Password Confirmation</p> <input name='password_confirmation' type='password'>
+			<input type="submit" value="Sign up">
+		</form>
+	</aside>
+
+<% end %>
