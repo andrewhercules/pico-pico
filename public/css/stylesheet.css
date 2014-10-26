@@ -61,7 +61,7 @@ HEADER
 
 section#sign-in-box {
 	position: absolute;
-	top: 100px;
+	top: 75px;
 	left: 800px;
 	height: 200px;
 	width: 400px;
@@ -141,13 +141,13 @@ aside#sign-up-box {
 	position: absolute;
 	top: 125px;
 	left: 1025px;
-	height: 400px;
+	height: 470px;
 	width: 200px;
 	background-color: #4f4749;
 }
 
 /*==========
-FORMS
+SIGN IN FORM
 ==========*/
 
 #sign-in-form input[type=text], form input[type="password"] {
@@ -182,5 +182,45 @@ FORMS
 		padding-top: 4%;
 		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 		color: #4f4749;
+		font-size: 1.25em;
+	}
+
+/*==========
+SIGN UP FORM
+==========*/
+
+#sign-up-form input[type=text], form input[type="password"] {
+    border: 1px;
+    font-size: 1em;
+    width: 125px;
+    height: 30px;
+    margin-left: 35px; 
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+#sign-up-form input[type=submit] {
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #4f4749;
+	background-color: #fbc616;
+	padding: 5px;
+	margin-top: 10px;
+	margin-left: 25px;
+
+}
+
+#sign-up-form p {
+		color: white;
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+#sign-up-form h2 {
+		font-weight: 700;
+		margin-left: 10px;
+		padding-top: 10%;
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		color: white;
 		font-size: 1.25em;
 	}

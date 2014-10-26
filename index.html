@@ -18,12 +18,11 @@
 		</section>
 		
 		<section id='sign-in-box'>
-			<form method='post' action='/' id='sign-in-form'><h2>Please sign here</h2><br />
+			<form method='post' action='/' id='sign-in-form'><h2>Sign in here</h2><br />
 			<p>Username</p> <input type='text' name='username' placeholder='Username'>
 			<p>Password &nbsp;&nbsp;(<a href="/forgotpassword">Forgot your password?</a>)</p> <input type="password" name="password" placeholder='Password'>
 			<input type="submit" value="Sign in"> 
 			</form>
-
 		</section>
 
 		
@@ -44,7 +43,13 @@
 			<section id='list-of-peeps'></section>	
 
 			<aside id='sign-up-box'>
-				<h2>sign-up form</h2>
+			<form method='post' action='/' id='sign-up-form'><h2>Sign up here</h2><br />
+			<p>Full Name</p> <input name="name" type="text" placeholder='Full Name' value="<%= @user.name %>">
+			<p>Username</p> <input name="username" type="text" value="<%= @user.username %>">
+			<p>Email</p> <input name="email" type="text" value="<%= @user.email %>">
+			<p>Password</p> <input name="password" type="password">
+			<p>Password Confirmation</p> <input name="password_confirmation" type="password"> <input type="submit" value="Sign up">
+			</form>
 			</aside>
 
 
