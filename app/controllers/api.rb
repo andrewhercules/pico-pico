@@ -1,6 +1,6 @@
 get '/api' do
  	
-	@peeps = Peep.all 	
+	@peeps = Peep.all.reverse 	
 	@api_data = Array.new
 
 	@peeps.each do |peep|
