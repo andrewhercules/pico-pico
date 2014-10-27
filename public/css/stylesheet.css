@@ -1,16 +1,67 @@
+/*HEADER*/
+
+header#container {
+	margin-left: auto;
+	margin-right: auto;
+	height: 60px;
+	max-width: 75%;
+	min-width: 75%;
+	background-color: #4f4748;
+}
+
+section#header {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+#header-icon {
+	float: left;
+	margin-left: 25px;
+	margin-top: 10px;
+}
+
+h1#app-name {
+	display: inline;
+	float: left;
+	margin-left: 30px;
+	margin-top: 5px;
+	font-weight: 900;
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 3em;
+}
+
+a#sign-in-button {
+  float:right;
+  margin-right: 100px;
+  margin-top: 13px;
+  width: 80px;
+  color: #4f4749;
+  font-size: 1.5em;
+  font-weight: 600;
+  background: #fbc616;
+  text-align: center;
+  vertical-align: center;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+}
+
+section#sign-in-box {
+	position: relative;
+	left: 700px;
+	top: 100px;
+	height: 200px;
+	width: 400px;
+	background-color: #fbc616;
+	z-index: 5;
+}
+
+
 /*==========
 FONTS & HEADERS
 ==========*/
 
-	h1 {
-		font-weight: 400;
-		padding-left: 8%;
-		padding-top: 1.25%;
-		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-		color: white;
-		font-size: 3em;
-		font-weight: 900;
-	}
+
 
 	h2 {
 		font-weight: 400;
@@ -103,47 +154,9 @@ FONTS & HEADERS
 HEADER
 ==========*/
 
-	section#header {
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-		height: 75px;
-		background-color: #4f4748;
-	}
 
-	#header-icon {
-		position: absolute;
-		top: 17px;
-		left: 160px;
-	}
 
-section#sign-in-box {
-	position: absolute;
-	top: 75px;
-	left: 800px;
-	height: 200px;
-	width: 400px;
-	background-color: #fbc616;
-	z-index: 2;
-}
 
-a#sign-in-button {
-  display: inline-block;
-  width: 80px;
-  color: #4f4749;
-  font-size: 1.5em;
-  font-weight: 600;
-  background: #fbc616;
-  text-align: center;
-  vertical-align: center;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  margin-left: 5px;
-  margin-right: 5px;
-  position: relative;
-  left: 900px;
-  top: -45px;
-}
 
 
 /*==========
@@ -152,10 +165,9 @@ MAIN AREA
 
 aside#profile-avatar-box {
 	position: absolute;
-	left: 175px;
-	top: 125px;
-	height: 200px;
-	width: 200px;
+	top: 200px;
+	height: 15%;
+	width: 15%;
 	background-color: #4f4749;
 }
 
@@ -182,6 +194,8 @@ section#main-body {
 		margin-right: auto;
 		height: 1400px;
 		background-color: #cccccc;
+		max-width: 80%;
+		min-width: 80%;
 	}
 
 		#list-of-peeps {
