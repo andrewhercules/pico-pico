@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	// // Use the code below to hide the sign-in-box after page loads
 	
-	$('#sign-in-box').hide();
+	// $('#sign-in-box').hide();
 	$('#forgot-password-box').hide();
 
 	$('#forgot-password').hide();

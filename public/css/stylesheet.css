@@ -46,14 +46,13 @@ a#sign-in-button {
   text-decoration: none;
 }
 
-section#sign-in-box {
-	position: relative;
-	left: 700px;
-	top: 100px;
+#header #sign-in-box {
+	position: absolute;
+	top: 50px;
 	height: 200px;
 	width: 400px;
 	background-color: #fbc616;
-	z-index: 5;
+	z-index: 5;s
 }
 
 
