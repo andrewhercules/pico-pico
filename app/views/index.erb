@@ -1,57 +1,56 @@
 <body>
 	
-
-	<section id='left-side'>
-
-	</section>
+<section id='main-body'>
 	
-	<section id='main-body'>
-		
-								<aside id='profile-avatar-box'>
-							<img src='/images/profile-avatar.png' id='profile-avatar' alt='Profile avatar'>	
-						</aside>
-
-						<% if current_user %>
-							<aside id='profile-info-box'>
-								<h4>Name:</h4>
-								<p id='name'><%= current_user.name %></p>
-								<h4>Username:</h4>
-								<p id='username'><%= current_user.username %></p>
-							</aside>
-
-						<% end %>
-
-
-
-		<ul id='list-of-peeps'>
-		<br />
-			<template id='peep-template'>
-				<li class='peep'>
-					<p class='peep-username'>{{name}} (@{{username}}) says:</p>
-					<p class='peep-message'>{{message}}<p>
-					<p class='peep-date'>{{date}}</p>
-					<a href='#' id='remove'>remove</a>
-				</li>	
-			</template>		
-		</ul>
-
-
+		<section id='centre-column'>
 
 			<% if current_user %>
 
-				<aside id='sign-up-box'>
-				
-					<p class='welcome-message'>Welcome, <%= current_user.name %>!<br />(@<%= current_user.username %>)</p>
+				<section id="new-peep">
+					<form action="/peeps" method="post">
+					<p class='form'>Post a new peep! (Max 150 characters)</p><br /><br /><input type="text" name="message" placeholder='Your message goes here'>
+					<input type="submit" value="Post">
+					</form>		
+				</section>
+
+			<% end %>
+
+			<ul id='list-of-peeps'>
+				<br />
+					<template id='peep-template'>
+						<li class='peep'>
+							<p class='peep-username'>{{name}} (@{{username}}) says:</p>
+							<p class='peep-message'>{{message}}<p>
+							<p class='peep-date'>{{date}}</p>
+							<a href='#' id='remove'>remove</a>
+						</li>	
+					</template>		
+			</ul>
 					
+		</section>
+		
+
+
+		<section id='right-column'>
+
+			<% if current_user %>
+			
+				<aside id='welcome-box'>	
+					<p class='welcome-message'>Welcome, <%= current_user.name %>!<br />(@<%= current_user.username %>)</p>
 					<form id="log-out-form" method="post" action="/sessions">
 						<input type="hidden" name="_method" value="delete">
 						<input type="submit" value="Sign out" id='log-out-button'>
 					</form>
-					
 					<br />
-					
-					<p class='daily-thought'>Look Marge, you don't know what it's like. I'm the one out there every day putting his ass on the line. And I'm not out of order! You're out of order. The whole freaking system is out of order. You want the truth? You want the truth?! You can't handle the truth! 'Cause when you reach over and put your hand into a pile of goo that was your best friend's face, you'll know what to do! Forget it, Marge, it's Chinatown!<br /><br />- Homer Simpson</p>
-				
+				</aside>
+
+				<img src='/images/profile-avatar.png' id='profile-avatar' alt='Profile avatar'>
+
+				<aside id='profile-info-box'>
+					<h4>Name:</h4>
+					<p id='name'><%= current_user.name %></p>
+					<h4>Username:</h4>
+					<p id='username'><%= current_user.username %></p>
 				</aside>
 
 			<% else %>
@@ -68,6 +67,18 @@
 				</aside>
 
 			<% end %>
+
+
+		</section>
+
+
+
+
+		
+
+
+
+
 
 
 						<section id='forgot-password-box'>
