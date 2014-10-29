@@ -2,6 +2,18 @@
 	box-sizing: border-box;
 }
 
+/*==========
+FONTS
+==========*/
+
+
+	p.form {
+		font-weight: 400;
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		color: white;
+		font-size: 1em;
+	}
+
 /*HEADER*/
 
 header#container {
@@ -39,7 +51,6 @@ a#sign-in-button {
   float:right;
   margin-right: 100px;
   margin-top: 13px;
-  width: 80px;
   color: #4f4749;
   font-size: 1.5em;
   font-weight: 600;
@@ -49,17 +60,6 @@ a#sign-in-button {
   padding: 5px 20px 5px 20px;
   text-decoration: none;
 }
-
-#header #sign-in-box {
-	position: absolute;
-	right: 100px;
-	top: 50px;
-	height: 200px;
-	width: 400px;
-	background-color: #fbc616;
-	z-index: 5;s
-}
-
 
 /*MAIN BODY*/
 
@@ -76,8 +76,8 @@ section#main-body {
 
 section#centre-column{
 	float: left;
-	max-width: 80%;
-	min-width: 80%;
+	max-width: 75%;
+	min-width: 75%;
 	height: 1400px;
 }
 
@@ -131,14 +131,140 @@ section#new-peep {
 }
 
 
-/*RIGHT COLUMN*/
+/*==========
+RIGHT COLUMN
+==========*/
 
 section#right-column{
 	float: left;
-	max-width: 20%;
-	min-width: 20%;
+	max-width: 25%;
+	min-width: 25%;
 	height: 1400px;
 }
+
+	/*SIGN IN FORM*/
+
+	aside#sign-in-box {
+		display: block;
+		height: 20%;
+		margin-top: 10%;
+		background-color: #fbc616;
+		z-index: 5;
+	}
+
+	aside#sign-in-box h2 {
+		padding: 10px;
+		font-weight: 700;
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		color: #4f4749;
+		font-size: 2em;
+	}
+
+	#sign-in-form p {
+			color: #4f4749;
+	    font-size: 1em;
+	    font-weight: 400;
+	  }
+
+	#sign-in-form input[type=text], input[type=password] {
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		border: 1px;
+		font-size: 1em;
+		background-color: white;
+		padding: 5px;
+		margin: 10px;
+	  width: 75%;
+	}
+
+	#sign-in-form input[type=submit] {
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		color: white;
+		border: 1px;
+		font-size: 1.25em;
+		background-color: #4f4748;
+		padding: 5px;
+		margin: 10px;
+	  width: 25%;
+	}
+
+	/*SIGN UP FORM*/
+
+	aside#sign-up-box {
+		display: block;
+		margin-top: 10%;
+		height: 35%;
+		background-color: #fbc616;
+		z-index: 5
+	}
+
+	aside#sign-up-box h2 {
+		padding: 10px;
+		font-weight: 700;
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		color: #4f4749;
+		font-size: 2em;
+	}
+
+	#sign-up-form input[type=text], input[type=password] {
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		border: 1px;
+		font-size: 1em;
+		background-color: white;
+		padding: 5px;
+		margin: 10px;
+	  width: 75%;
+	}
+
+	#sign-up-form input[type=submit] {
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		color: white;
+		border: 1px;
+		font-size: 1.25em;
+		background-color: #4f4748;
+		padding: 5px;
+		margin: 10px;
+	  width: 25%;
+	}
+
+	aside#sign-in-box h2 {
+		padding: 10px;
+		font-weight: 700;
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		color: #4f4749;
+		font-size: 2em;
+	}
+
+	#sign-in-form p {
+			color: #4f4749;
+	    font-size: 1em;
+	    font-weight: 400;
+	  }
+
+	/*LOST PASSWORD FORM*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 img#profile-avatar {
 	display: block;
@@ -188,6 +314,11 @@ aside#welcome-box {
 }
 
 
+
+
+
+
+
 aside#log-out-form {
 
 	}
@@ -217,7 +348,7 @@ aside#log-out-form {
 FONTS & HEADERS
 ==========*/
 
-
+/*
 
 	h2 {
 		font-weight: 400;
@@ -226,15 +357,9 @@ FONTS & HEADERS
 		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 		color: white;
 		font-size: 2em;
-	}
+	}*/
 
-	p.form {
-		font-weight: 400;
-		padding-left: 8%;
-		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-		color: white;
-		font-size: 1em;
-	}
+
 
 	p.welcome-message {
 		font-weight: 400;
@@ -259,91 +384,12 @@ FONTS & HEADERS
 		font-weight: 400;
 		font-size: 0.7em;
 	}
-
+*/
 
 /*==========
 SIGN IN FORM
 ==========*/
 
-#sign-in-form input[type=text], input[type="password"], #forgot-password-form input[type=text], input[type="password"] {
-    border: 1px;
-    font-size: 1em;
-    width: 250px;
-    height: 30px;
-    margin-left: 35px; 
-    margin-top: 5px;
-    margin-bottom: 15px;
-  }
-
-#sign-in-form input[type=submit], #forgot-password-form input[type=submit]{
-	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-	font-size: 1em;
-	color: white;
-	background-color: #4f4749;
-	padding: 5px;
-	margin-left: 10px;
-
-}
-
-#sign-in-form p, #forgot-password p {
-		color: #4f4749;
-    font-size: 1em;
-    font-weight: 400;
-  }
-
-#sign-in-form h2, #forgot-password-form h2 {
-		font-weight: 700;
-		margin-left: 10px;
-		padding-top: 4%;
-		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-		color: #4f4749;
-		font-size: 1.25em;
-	}
-
-/*==========
-SIGN UP FORM
-==========*/
-
-#sign-up-form input[type=text], #sign-up-form input[type="password"] {
-    border: 1px;
-    font-size: 1em;
-    width: 125px;
-    height: 30px;
-    margin-left: 35px; 
-    margin-top: 5px;
-    margin-bottom: 15px;
-  }
-
-#sign-up-form input[type=submit] {
-	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-	font-size: 1em;
-	color: #4f4749;
-	background-color: #fbc616;
-	padding: 5px;
-	margin-top: 10px;
-	margin-left: 25px;
-
-}
-
-#sign-up-form p {
-		color: white;
-    font-size: 1em;
-    font-weight: 400;
-  }
-
-#sign-up-form h2 {
-		font-weight: 700;
-		margin-left: 10px;
-		padding-top: 10%;
-		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-		color: white;
-		font-size: 1.25em;
-	}
-
-
-/*==========
-NEW PEEP
-==========*/
 
 
 

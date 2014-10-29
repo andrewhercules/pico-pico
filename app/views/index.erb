@@ -55,8 +55,18 @@
 
 			<% else %>
 
+				<aside id='sign-in-box'>
+					<form method='post' action='/sessions' id='sign-in-form'><h2>Sign in here</h2>
+						<p class='form-label'>Username</p> <input type='text' name='username' placeholder='Username'>
+						<p class='form-label'>Password (<a href='#' id="forgot-password-button">Forgot your password?</a>)</p> 
+						<input type="password" name="password" placeholder='Password'><br /><br />
+						<input type="submit" id='sign-in-form-button' value="Sign in"> 
+					</form>
+				</aside>
+
+
 				<aside id='sign-up-box'>
-					<form method='post' action='/users' id='sign-up-form'><h2>Sign up here</h2><br />
+					<form method='post' action='/users' id='sign-up-form'><h2>Sign up here</h2>
 						<p class='form'>Full Name</p> <input name='name' type='text' placeholder='Full Name'>
 						<p class='form'>Username</p> <input name='username' type='text' placeholder='Username'>
 						<p class='form'>Email</p> <input name='email' type='text' placeholder='Email address'>
