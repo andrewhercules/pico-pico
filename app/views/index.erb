@@ -22,7 +22,7 @@
 							<p class='peep-username'>{{name}} (@{{username}}) says:</p>
 							<p class='peep-message'>{{message}}<p>
 							<p class='peep-date'>{{date}}</p>
-							<a href='#' id='remove'>remove</a>
+							<p class='remove-peep'><a href='' id='remove'>*remove peep*</a></p>
 						</li>	
 					</template>		
 			</ul>
@@ -59,11 +59,17 @@
 					<form method='post' action='/sessions' id='sign-in-form'><h2>Sign in here</h2>
 						<p class='form-label'>Username</p> <input type='text' name='username' placeholder='Username'>
 						<p class='form-label'>Password (<a href='#' id="forgot-password-button">Forgot your password?</a>)</p> 
-						<input type="password" name="password" placeholder='Password'><br /><br />
+						<input type="password" name="password" placeholder='Password'>
 						<input type="submit" id='sign-in-form-button' value="Sign in"> 
 					</form>
 				</aside>
 
+				<aside id='forgot-password-box'>	
+					<form action='/forgotpassword' method='post' id='forgot-password-form'><h2>Please enter your username and email address. A link to reset your password will be sent to you via email.</h2>
+					<p class='form'>Username</p> <input name='username' type='text' placeholder='Username'>
+					<p class='form'>Email</p> <input name='email' type='text' placeholder='Email address'> <input type="submit" name="Submit" value="Submit">
+					</form>
+				</aside>
 
 				<aside id='sign-up-box'>
 					<form method='post' action='/users' id='sign-up-form'><h2>Sign up here</h2>
@@ -78,29 +84,7 @@
 
 			<% end %>
 
-
 		</section>
-
-
-
-
-		
-
-
-
-
-
-
-						<section id='forgot-password-box'>
-							
-							<form action='/forgotpassword' method='post' id='forgot-password-form'><h2>Please enter your username and email address. A link to reset your password will be sent to you via email.</h2><br />
-							<p class='form'>Username</p> <input name='username' type='text' placeholder='Username'>
-							<p class='form'>Email</p> <input name='email' type='text' placeholder='Email address'> <input type="submit" name="Submit" value="Submit">
-							</form>
-
-							<br />
-
-						</section>
 
 	</section>
 
