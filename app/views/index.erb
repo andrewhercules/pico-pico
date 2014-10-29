@@ -22,7 +22,7 @@
 							<p class='peep-username'>{{name}} (@{{username}}) says:</p>
 							<p class='peep-message'>{{message}}<p>
 							<p class='peep-date'>{{date}}</p>
-							<p class='remove-peep'><a href='' id='remove'>*remove peep*</a></p>
+							<p class='remove-peep'><% if current_user %><a href='' id='remove'>*remove peep*</a><% end %></p>
 						</li>	
 					</template>		
 			</ul>
@@ -37,7 +37,7 @@
 			
 				<aside id='welcome-box'>	
 					<p class='welcome-message'>Welcome, <%= current_user.name %>!<br />(@<%= current_user.username %>)</p>
-					<form id="log-out-form" method="post" action="/sessions">
+					<form id="sign-out-form" method="post" action="/sessions">
 						<input type="hidden" name="_method" value="delete">
 						<input type="submit" value="Sign out" id='log-out-button'>
 					</form>
