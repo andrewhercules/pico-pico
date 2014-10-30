@@ -2,8 +2,9 @@
 	box-sizing: border-box;
 }
 
+
 /*==========
-FONTS
+GLOBAL FONTS & STYLES
 ==========*/
 
 	a {
@@ -18,6 +19,7 @@ FONTS
 		color: white;
 		font-size: 1em;
 	}
+
 
 /*=========
 HEADER
@@ -58,7 +60,21 @@ HEADER
 
 	a#sign-in-button {
 	  float:right;
-	  margin-right: 100px;
+	  margin-right: 4%;
+	  margin-top: 13px;
+	  color: #4f4749;
+	  font-size: 1.5em;
+	  font-weight: 600;
+	  background: #fbc616;
+	  text-align: center;
+	  vertical-align: center;
+	  padding: 5px 20px 5px 20px;
+	  text-decoration: none;
+	}
+	
+	a#sign-up-button {
+	  float:right;
+	  margin-right: 4%;
 	  margin-top: 13px;
 	  color: #4f4749;
 	  font-size: 1.5em;
@@ -70,6 +86,7 @@ HEADER
 	  text-decoration: none;
 	}
 
+
 /*==========
 MAIN BODY
 ==========*/
@@ -79,7 +96,7 @@ MAIN BODY
 		min-width: 75%;
 		margin-left: auto;
 		margin-right: auto;
-		height: 1400px;
+		height: 1550px;
 		background-color: #cccccc;
 	}
 
@@ -90,14 +107,13 @@ MAIN BODY
 		height: 1400px;
 	}
 
-
 	/*LIST OF PEEPS*/
 
 	ul#list-of-peeps {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 3.3%;
-		width: 90%;
+		width: 92%;
 		height: 95%;
 		background-color: #4f4749;
 	}
@@ -109,78 +125,77 @@ MAIN BODY
 	  border: 5px solid #fbc616;
 	}
 
-p.peep-message {
-	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-  margin-left: 25px;
-  font-size: 1.25em;
-  font-color: yellow;
-  padding-top: 15px;
-  padding-bottom: 10px;
-}
+	p.peep-message {
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	  margin-left: 25px;
+	  font-size: 1.25em;
+	  font-color: yellow;
+	  padding-top: 15px;
+	  padding-bottom: 10px;
+	}
 
-p.peep-date {
-	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-  font-size: 0.6em;
-  text-align: right;
-  margin-right: 10px;
-}
+	p.peep-date {
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	  font-size: 0.6em;
+	  text-align: right;
+	  margin-right: 10px;
+	}
 
-p.peep-username {
-	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-  font-size: 0.8em;
-  padding-top: 10px;
-  padding-left: 10px;
-}
+	p.peep-username {
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	  font-size: 0.8em;
+	  padding-top: 10px;
+	  padding-left: 10px;
+	}
 
-p.remove-peep {
-	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-  font-size: 0.6em;
-  text-align: right;
-  margin-right: 10px;
-  padding-bottom: 10px;
-}
-
+	p.remove-peep {
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	  font-size: 0.6em;
+	  text-align: right;
+	  margin-right: 10px;
+	  padding-bottom: 10px;
+	}
 
 	/*NEW PEEP FORM*/
 
-
+	section#new-peep {
+		width: 92%;
+		background-color: #4f4749;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5%;
+	}
+	
 	#new-peep form input[type=text] {
-  	display: block;
   	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
     border: 1px;
     font-size: 1em;
-    width: 400px;
+    width: 83%;
     height: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2.7%;
+    margin-bottom: 3%;
+    padding: 5px;
   }
 
-#new-peep form input[type=submit]{
-	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-	font-size: 1em;
-	color: white;
-	background-color: #fbc616;
-	padding: 5px;
-	margin-left: 10px;
-
-}
-
+	#new-peep form input[type=submit]{
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		font-size: 1em;
+		font-weight: 600;
+		border: 1px;
+		color: #4f4748;
+		background-color: #fbc616;
+		padding: 5px;
+		margin-left: 10px;
+		width: 10%;
+	}
 
   #new-peep form p {
     font-size: 0.8em;
-    width: 400px;
-    height: 35px;
-
+    font-weight: 400px;
+    margin-left: 2.7%;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
-
-section#new-peep {
-	
-	width: 90%;
-
-	background-color: #4f4749;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 /*==========
 RIGHT COLUMN
@@ -375,10 +390,12 @@ section#right-column {
 		font-size: 0.8em;
 	}
 
+/*	WELCOME MESSAGE & SIGN OUT FORM*/
+
 	aside#welcome-box {
 		display: block;
-		margin-top: 20%;
-		height: 8%;
+		margin-top: 15%;
+		height: 8.25%;
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
@@ -397,13 +414,14 @@ section#right-column {
 
 	#sign-out-form input[type=submit] {
 		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-		color: white;
+		font-weight: 600;
+		color: #4f4748;
 		border: 1px;
 		font-size: 1em;
 		background-color: #fbc616;
 		padding: 5px;
 		margin: 10px;
-	  width: 32%;
+	  width: 35%;
 	  margin-left: 7%;
 	}
 

@@ -1,0 +1,17 @@
+<aside id='welcome-box'>	
+	<p class='welcome-message'>Welcome, <%= current_user.name %>!<br />(@<%= current_user.username %>)</p>
+	<form id="sign-out-form" method="post" action="/sessions">
+		<input type="hidden" name="_method" value="delete">
+		<input type="submit" value="Sign out" id='log-out-button'>
+	</form>
+	<br />
+</aside>
+
+<img src='/images/profile-avatar.png' id='profile-avatar' alt='Profile avatar'>
+
+<aside id='profile-info-box'>
+	<h4>Name:</h4>
+	<p id='name'><%= current_user.name %></p>
+	<h4>Username:</h4>
+	<p id='username'><%= current_user.username %></p>
+</aside>
