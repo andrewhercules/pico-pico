@@ -1,24 +1,24 @@
-			<% if current_user %>
+<% if current_user %>
 
-				<section id="new-peep">
-					<form action="/peeps" method="post">
-					<p class='form'>Post a new peep! (Max 150 characters)</p><input type="text" name="message" placeholder='Your message goes here'>
-					<input type="submit" value="Post">
-					</form>		
-				</section>
+	<section id="new-peep">
+		<form action="/peeps" method="post">
+		<p class='form'>Post a new peep! (Max 150 characters)</p><input type="text" name="message" placeholder='Your message goes here'>
+		<input type="submit" value="Post">
+		</form>		
+	</section>
 
-			<% end %>
+<% end %>
 
-			<ul id='list-of-peeps'>
-				<br />
-					<template id='peep-template'>
-						<li class='peep'>
-							<p class='peep-username'>{{name}} (@{{username}}) says:</p>
-							<p class='peep-message'>{{message}}<p>
-							<p class='peep-date'>{{date}}</p>
-							<p class='remove-peep'><% if current_user %><a href='#' id='remove-individual-peep'>*remove peep*</a><% end %></p>
-						</li>	
-					</template>		
-			</ul>
-					
-		</section>
+<ul id='list-of-peeps'>
+	<br />
+		<template id='peep-template'>
+			<li class='peep'>
+				<p class='peep-username'>{{name}} (@{{username}}) says:</p>
+				<p class='peep-message'>{{message}}<p>
+				<p class='peep-date'>{{date}}</p>
+				<p class='remove-peep'><% if current_user %><a href='#' id='remove-individual-peep'>*remove peep*</a><% end %></p>
+			</li>	
+		</template>		
+</ul>
+		
+</section>

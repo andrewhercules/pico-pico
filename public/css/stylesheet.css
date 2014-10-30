@@ -25,6 +25,7 @@ GLOBAL FONTS & STYLES
 HEADER
 =========*/
 
+
 	/*HEADER LAYOUT*/
 
 	header#container {
@@ -91,6 +92,7 @@ HEADER
 MAIN BODY
 ==========*/
 
+
 	section#main-body {
 		max-width: 75%;
 		min-width: 75%;
@@ -100,14 +102,14 @@ MAIN BODY
 		background-color: #cccccc;
 	}
 
+	/*LIST OF PEEPS*/
+
 	section#centre-column{
 		float: left;
 		max-width: 75%;
 		min-width: 75%;
 		height: 1400px;
 	}
-
-	/*LIST OF PEEPS*/
 
 	ul#list-of-peeps {
 		margin-left: auto;
@@ -186,7 +188,7 @@ MAIN BODY
 		background-color: #fbc616;
 		padding: 5px;
 		margin-left: 10px;
-		width: 10%;
+		min-width: 10%;
 	}
 
   #new-peep form p {
@@ -197,9 +199,11 @@ MAIN BODY
     padding-bottom: 2%;
   }
 
+
 /*==========
 RIGHT COLUMN
 ==========*/
+
 
 section#right-column {
 	float: left;
@@ -279,7 +283,7 @@ section#right-column {
     font-weight: 400;
     padding-top: 10px;
 		margin-left: 10px;
-	  }
+	}
 
 	#sign-up-form input[type=text], input[type=password] {
 		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
@@ -299,7 +303,7 @@ section#right-column {
 		background-color: #4f4748;
 		padding: 5px;
 		margin: 10px;
-	  width: 30%;
+	  min-width: 35%;
 	}
 
 	/*LOST PASSWORD FORM*/
@@ -320,13 +324,13 @@ section#right-column {
 	}
 
 	#forgot-password-form p {
-			font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-			color: #4f4749;
-	    font-size: 1em;
-	    font-weight: 400;
-	    padding-top: 10px;
-			margin-left: 10px;
-	  }
+		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+		color: #4f4749;
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 10px;
+		margin-left: 10px;
+  }
 
 	#forgot-password-form input[type=text], input[type=password] {
 		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
@@ -346,7 +350,7 @@ section#right-column {
 		background-color: #4f4748;
 		padding: 5px;
 		margin: 10px;
-	  width: 30%;
+	  min-width: 35%;
 	}
 
 	/*PROFILE BOX*/
@@ -369,7 +373,6 @@ section#right-column {
 		margin-right: auto;
 		background-color: #4f4749;
 	}
-
 
 	aside#profile-info-box p {
 		font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
@@ -421,14 +424,16 @@ section#right-column {
 		background-color: #fbc616;
 		padding: 5px;
 		margin: 10px;
-	  width: 35%;
+	  min-width: 35%;
 	  margin-left: 7%;
 	}
+
 
 /*
 ==========
 ERRORS
 ==========*/
+
 
 .flash {
   text-align: center;
