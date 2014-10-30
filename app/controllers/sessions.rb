@@ -10,13 +10,13 @@ post '/sessions' do
 		session[:username] = params[:username]
 		redirect to('/')
 	else
-		flash[:errors] = ["The email or password is incorrect - try again!"]
+		flash[:errors] = ["Your login details are incorrect. Please try again."]
 		redirect to('/')
 	end
 end
 
 delete '/sessions' do
-  flash[:notice] = "Thanks - and have a great day!"
+  flash[:notice] = "Thank you for using Chitter. Have a wonderful day!"
   session[:user_id] = nil
   redirect to('/')
 end

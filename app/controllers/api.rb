@@ -1,6 +1,7 @@
 get '/api' do
  	
-	@peeps = Peep.all.reverse 	
+	@peeps = Peep.all.reverse
+
 	@api_data = Array.new
 
 	@peeps.each do |peep|
@@ -13,22 +14,6 @@ get '/api' do
 	
 	end
 
-	JSON.generate(@api_data)
+	@api_data.to_json
 
 end
-
-
-
-# Results in /api page showing <DataMapper::Query>
-
-#  	@api_hash = {
-# 		"username" => Peep.user.username,
-# 		"name" => Peep.user.name,
-# 		"date" => Peep.date,
-# 		"message" => Peep.message,		
-#  	}
-
-
-
-
-# 	@api_hash.to_json

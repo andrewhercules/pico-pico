@@ -7,7 +7,7 @@ feature 'User signs up' do
 
 	scenario 'when being signed out' do
 		expect{ sign_up }.to change(User, :count).by (1)
-		expect(page).to have_content("Welcome, testuser!")
+		expect(page).to have_content('Welcome, Test User!(@testuser)')
 		expect(User.first.email).to eq("test@email.com")
 	end
 
@@ -43,9 +43,9 @@ feature 'User signs in' do
 
 	scenario 'with correct username and password' do
 		visit '/'
-		expect(page).not_to have_content("Welcome, testuser!")
+		expect(page).not_to have_content("Welcome, Test User!(@testuser)")
 		sign_in("testuser", "123456")
-		expect(page).to have_content("Welcome, testuser!")
+		expect(page).to have_content("Welcome, Test User!(@testuser)")
 	end
 
 	scenario 'with correct username and incorrect password' do
@@ -78,7 +78,7 @@ feature 'User signs out' do
 		sign_in("testuser", "123456")
 		click_button "Sign out"
 		expect(page).to have_content("Thanks - and have a great day!")
-		expect(page).not_to have_content("Welcome, testuser!")
+		expect(page).not_to have_content("Welcome, Test User!(@testuser)")
 	end
 
 end
@@ -95,14 +95,14 @@ feature 'User forgets password' do
 	end
 
 	scenario 'and requests new password' do
-		visit '/sessions/new'
-		forgot_password('testuser', 'test@email.com')
+		visit '/'
+			within '#sign-in-form' do
+				click_on 'Forgot your password?'
+			end
+			within '#forgot-password-form' do
+				forgot_password('testuser', 'test@email.com')
+			end
 		expect(current_path).to eq('/')
 	end
-
-	scenario 'and receives link via email to reset password' do
-    visit "/users/reset_password/ABC123"
-    expect(page).to have_content("Please fill in this form")
-  end
 
 end
