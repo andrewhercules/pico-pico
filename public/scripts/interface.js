@@ -7,12 +7,12 @@ $(document).ready(function() {
 
 	$('#sign-in-button').on('click', function() {
 	  $('#sign-in-box').toggle();
-	  $('#sign-up-box').toggle(); 
+	  $('#sign-up-box').hide(); 
 	})
 
 	$('#sign-up-button').on('click', function() {
 	  $('#sign-up-box').toggle();
-	  $('#sign-in-box').toggle(); 
+	  $('#sign-in-box').hide(); 
 	})
 
 	$('#forgot-password-button').on('click', function() {
