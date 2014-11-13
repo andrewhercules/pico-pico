@@ -98,8 +98,8 @@ MAIN BODY
 		min-width: 75%;
 		margin-left: auto;
 		margin-right: auto;
-		height: 1550px;
 		background-color: #cccccc;
+		overflow: auto;
 	}
 
 	/*LIST OF PEEPS*/
@@ -108,7 +108,7 @@ MAIN BODY
 		float: left;
 		max-width: 75%;
 		min-width: 75%;
-		height: 1400px;
+		overflow: auto;
 	}
 
 	ul#list-of-peeps {
@@ -162,10 +162,10 @@ MAIN BODY
 
 	section#new-peep {
 		width: 92%;
-		background-color: #4f4749;
+		background-color: #fbc616;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 5%;
+		margin-top: 3%;
 	}
 	
 	#new-peep form input[type=text] {
@@ -184,8 +184,8 @@ MAIN BODY
 		font-size: 1em;
 		font-weight: 600;
 		border: 1px;
-		color: #4f4748;
-		background-color: #fbc616;
+		color: white;
+		background-color: #4f4748;
 		padding: 5px;
 		margin-left: 10px;
 		min-width: 10%;
@@ -193,10 +193,11 @@ MAIN BODY
 
   #new-peep form p {
     font-size: 0.8em;
-    font-weight: 400px;
     margin-left: 2.7%;
     padding-top: 2%;
     padding-bottom: 2%;
+    color: #4f4748;
+    font-weight: 600;
   }
 
 
@@ -209,7 +210,7 @@ section#right-column {
 	float: left;
 	max-width: 25%;
 	min-width: 25%;
-	height: 1400px;
+	overflow: auto;
 }
 
 	/*SIGN IN FORM*/
@@ -360,13 +361,13 @@ section#right-column {
 	  margin-left: auto;
 	  margin-right: auto;
 	  width: 80%;
-	  margin-top: 20%;
+	  margin-top: 10%;
 	  border: 10px solid #4f4749;
 	}
 
 	aside#profile-info-box {
 		display: block;
-		margin-top: 15%;
+		margin-top: 10%;
 		height: 8%;
 		width: 80%;
 		margin-left: auto;
@@ -382,6 +383,7 @@ section#right-column {
 		font-weight: 600;
 		font-size: 1.2em;
 		margin-left: 8%;
+		margin-bottom: 2%;
 	}
 
 	aside#profile-info-box h4 {
@@ -397,7 +399,7 @@ section#right-column {
 
 	aside#welcome-box {
 		display: block;
-		margin-top: 15%;
+		margin-top: 10%;
 		height: 8.25%;
 		width: 80%;
 		margin-left: auto;
@@ -428,6 +430,26 @@ section#right-column {
 	  margin-left: 7%;
 	}
 
+/*
+==========
+NOTICES
+==========*/
+
+
+#flash-notice {
+	background-color: #fbc616;
+	min-width: 75%;
+	max-width: 75%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  color: #4f4748;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+ 	font-size: 1.5em;  
+}
+
 
 /*
 ==========
@@ -435,12 +457,16 @@ ERRORS
 ==========*/
 
 
-.flash {
+#flash-error {
+	background-color: #fbc616;
+	min-width: 75%;
+	max-width: 75%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
   color: #4f4748;
   font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-weight: 600;
  	font-size: 1.5em;  
 }

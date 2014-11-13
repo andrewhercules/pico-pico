@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 			$.each(peepList, function(count, individualPeep) {
 				$('#list-of-peeps').append(template(individualPeep))
-				return count < 9;
+				return count < 8;
 			})
 	});
 
