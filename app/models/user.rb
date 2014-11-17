@@ -11,7 +11,7 @@ class User
 	property :id, Serial
 	property :name, String
 	property :username, String, length: 5..20, unique: true, message: "This username has already been registered. Please choose another username."
-	property :email, String, unique: true, message: "This email has already been registered.  - try again!"
+	property :email, String, unique: true, message: "This email has already been registered. Please use another email address"
 	property :password_digest, Text
 	property :password_token, Text, default: ' '
 	property :password_token_timestamp, Text, default: ' ' 

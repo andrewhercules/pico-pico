@@ -18,15 +18,17 @@ feature 'User signs up' do
 	end
 
 	scenario 'with an email that is already registered' do
-		expect{ sign_up }.to change(User, :count).by (1)
-		expect{ sign_up }.to change(User, :count).by (0)
-		expect(page).to have_content("This email has already been registered - try again!")
+		sign_up
+		sign_out
+		sign_up
+		expect(page).to have_content("This email has already been registered. Please use another email address")
 	end
 
 	scenario 'with a username that is already registered' do
-		expect{ sign_up }.to change(User, :count).by (1)
-		expect{ sign_up }.to change(User, :count).by (0)
-		expect(page).to have_content("This username has already been registered - try again!")
+		sign_up
+		sign_out
+		sign_up
+		expect(page).to have_content("This username has already been registered. Please choose another username.")
 	end
 
 end
@@ -77,7 +79,7 @@ feature 'User signs out' do
 	scenario 'while being signed in' do
 		sign_in("testuser", "123456")
 		click_button "Sign out"
-		expect(page).to have_content("Thanks - and have a great day!")
+		expect(page).to have_content("Thank you for using Pico Pico. Have a wonderful day!")
 		expect(page).not_to have_content("Welcome, Test User!(@testuser)")
 	end
 
@@ -96,12 +98,7 @@ feature 'User forgets password' do
 
 	scenario 'and requests new password' do
 		visit '/'
-			within '#sign-in-form' do
-				click_on 'Forgot your password?'
-			end
-			within '#forgot-password-form' do
-				forgot_password('testuser', 'test@email.com')
-			end
+		forgot_password('testuser', 'test@email.com')
 		expect(current_path).to eq('/')
 	end
 

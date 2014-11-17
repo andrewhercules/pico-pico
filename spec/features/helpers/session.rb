@@ -34,8 +34,14 @@ module SessionHelpers
 			end
 	end
 
+	def sign_out
+		visit '/'
+		click_button 'Sign out'
+	end
+
 	def forgot_password(username, email)
 		visit '/'
+		click_button 'Sign in'
 			within('#sign-in-form') do
 				click_on 'Forgot your password?'
 			end
