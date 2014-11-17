@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Pico Pico is a revamped version of [Chitter](http://github.com/andrewhercules/chitter), a project I completed in Week 4 at Makers Academy. Using the same application, we were to add enhancements with jQuery and updated HTML and CSS. We were also asked to crete an API and use Handlebars.js to populate the peeps from our 'in-house API'. All other functionality is the same as Chitter. A live version of the application is available on Heroku at [http://pico-pico.herokuapps.com](http://pico-pico.herokuapps.com).
+Pico Pico is a revamped version of [Chitter](http://github.com/andrewhercules/chitter), a project I completed in Week 4 at Makers Academy. Using the same application, we were to add enhancements with jQuery and updated HTML and CSS. We were also asked to crete an API and use Handlebars.js to populate the peeps from our 'in-house API'. All other functionality is the same as Chitter. A live version of the application is available on Heroku at [https://pico-pico.herokuapp.com](https://pico-pico.herokuapp.com).
 
 ### Languages/Platforms/Tools
 
@@ -25,8 +25,11 @@ After spending the week learning about jQuery and APIs, I was eager to improve m
 
 - [ ] Integrate Mailgun gem and free email provider to send users a link to reset their password
 - [ ] Make HTML/CSS responsive for use on other devices
+- [ ] Fix test currently skipped due to jQuery show/hide/toggle issue on index page
 
 ### Instructions
+
+You can visit the live application at [https://pico-pico.herokuapp.com](https://pico-pico.herokuapp.com). Alternatively, you can follow the instructions below.
 
 Clone the repository:
 
