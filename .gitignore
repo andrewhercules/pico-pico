@@ -1,4 +1,6 @@
+.gitignore
 .DS_Store
+.rspec
 
 spec/.DS_Store
 spec/features/.DS_Store
