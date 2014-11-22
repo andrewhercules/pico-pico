@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Pico Pico is a revamped version of [Chitter](http://github.com/andrewhercules/chitter), a project I completed in Week 4 at Makers Academy. Using the same application, we were to add enhancements with jQuery and updated HTML and CSS. We were also asked to crete an API and use Handlebars.js to populate the peeps from our 'in-house API'. All other functionality is the same as Chitter. A live version of the application is available on Heroku at [https://pico-pico.herokuapp.com](https://pico-pico.herokuapp.com).
+Pico Pico is a revamped version of [Chitter](http://github.com/andrewhercules/chitter), a project I completed in Week 4 at Makers Academy. Using the same application, we were to add enhancements with jQuery and updated HTML and CSS. We were also asked to create an API and use Handlebars.js to populate the peeps from our 'in-house API'. All other functionality is the same as Chitter. A live version of the application is available on Heroku at [https://pico-pico.herokuapp.com](https://pico-pico.herokuapp.com).
 
 ### Languages/Platforms/Tools
 
@@ -12,7 +12,7 @@ Pico Pico is a revamped version of [Chitter](http://github.com/andrewhercules/ch
 * Sinatra
 * PostgreSQL
 * HTML/CSS
-* APIs and JSON objects
+* APIs
 * Handlebars.js
 * jQuery
 * Heroku
